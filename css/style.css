@@ -517,6 +517,11 @@ body.hidden-scroll {
   padding: 40px 20px;
 }
 
+.--destroy_padding {
+  padding: 0px 0px !important;
+  overflow: hidden;
+}
+
 .form {
   position: relative;
   height: 100%;
@@ -1618,6 +1623,10 @@ h6 {
   line-height: 1.2;
 }
 
+.section-info__text svg {
+  pointer-events: none;
+}
+
 .section-info__text span {
   font-size: 14px;
   font-weight: 500;
@@ -1663,11 +1672,35 @@ h6 {
 .section-info__text-price {
   position: absolute;
   white-space: nowrap;
-  bottom: 20px;
+  bottom: 46px;
   left: 70%;
   color: #FF3636;
   font-size: 25px;
   font-weight: 700;
+}
+
+.--display__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__size-chart {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.section__size-chart svg {
+  pointer-events: none;
+  fill: red;
+}
+
+.modal__size-chart img {
+  width: 100%;
+  height: 100%;
 }
 
 .section-bth {
@@ -1737,15 +1770,7 @@ h6 {
   transition: border 350ms linear;
 }
 
-.slider-nav__1 .slick-list {
-  padding: 0 !important;
-}
-
-.slider-nav__2 .slick-list {
-  padding: 0 !important;
-}
-
-.slider-nav__3 .slick-list {
+.--slider-paddin__destroy .slick-list {
   padding: 0 !important;
 }
 
