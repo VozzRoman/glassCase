@@ -550,6 +550,14 @@ body.hidden-scroll {
   margin-left: 10px;
 }
 
+.base__form-product-sale_price {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .base__form-product-price {
   visibility: hidden;
   opacity: 0;
